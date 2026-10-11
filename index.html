@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sriji Makeup Artistry – Luxury Bridal Studio</title>
+  <!-- Google Fonts Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- MOBILE SIDEBAR OVERLAY & DRAWER -->
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+  <div class="mobile-sidebar" id="mobileMenu">
+    <div class="mobile-sidebar-header">
+      <div class="brand-monogram-badge">
+        <div class="monogram-seal">
+          <span class="initials">S</span>
+        </div>
+        <div class="monogram-text">Sriji <span>Artistry</span></div>
+      </div>
+      <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close Menu">✕</button>
+    </div>
+
+    <div class="mobile-sidebar-body">
+      <span class="script-tagline" style="font-size: 1.5rem; text-align: center; color: var(--gold-light);">Explore Studio</span>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" onclick="closeMobileMenu()">✦ Home</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">✦ About</a></li>
+        <li><a href="#portfolio" onclick="closeMobileMenu()">✦ Portfolio</a></li>
+        <li><a href="#services" onclick="closeMobileMenu()">✦ Services</a></li>
+        <li><a href="#packages" onclick="closeMobileMenu()">✦ Packages</a></li>
+        <li><a href="#why-us" onclick="closeMobileMenu()">✦ Why Choose Us</a></li>
+      </ul>
+
+      <div class="mobile-sidebar-cta">
+        <div class="mobile-sidebar-contact">
+          <a href="tel:+919043568407">📞 +91 90435 68407</a>
+          <a href="https://www.instagram.com/sriji_makeup_artistry?igsh=MXF2bjA5aWFlZTQwaw==" target="_blank">📷 @sriji_makeup_artistry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <nav id="navbar" class="hero-navbar">
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-item active">Home</a></li>
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+      <li><a href="#services" class="nav-item">Services</a></li>
+      <li><a href="#packages" class="nav-item">Packages</a></li>
+      <li><a href="#why-us" class="nav-item">Why Choose Us</a></li>
+    </ul>
+    <div class="hamburger" onclick="openMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <!-- Monogram Emblem S with Botanical Leaves -->
+      <div class="hero-brand-emblem reveal reveal-up">
+        <div class="monogram-s-icon">
+          <svg viewBox="0 0 100 100" class="botanical-s-leaf">
+            <path d="M 50 10 C 30 20, 20 40, 20 60 C 20 80, 35 95, 50 95 C 65 95, 80 80, 80 60 C 80 40, 70 20, 50 10 Z" fill="none" stroke="#C5A059" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <path d="M 28 35 C 18 25, 12 30, 22 40 M 72 35 C 82 25, 88 30, 78 40 M 20 65 C 10 60, 8 70, 18 72 M 80 65 C 90 60, 92 70, 82 72" fill="none" stroke="#8C5353" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="letter-s">S</span>
+        </div>
+        <h1 class="hero-brand-name">SRIJI</h1>
+        <div class="hero-brand-tag">MAKEUP ARTISTRY</div>
+      </div>
+
+      <!-- Subtitle category -->
+      <div class="hero-category-text reveal reveal-up" data-delay="100">
+        Bridal Makeup &nbsp;|&nbsp; Hair &nbsp;|&nbsp; Draping
+      </div>
+
+      <!-- Cursive Tagline -->
+      <div class="hero-cursive-lines reveal reveal-up" data-delay="200">
+        <span>Glow that feels real</span>
+      </div>
+
+      <!-- Botanical Line Art (Bottom Left Corner) -->
+      <div class="hero-botanical-bottom-left">
+        <svg viewBox="0 0 250 250" fill="none" stroke="#C5A059" stroke-width="1.2" stroke-linecap="round">
+          <path d="M 0 250 Q 80 180 140 140 Q 180 110 230 70" />
+          <path d="M 50 200 C 30 180 20 150 40 140 C 60 130 80 160 70 190 Z" opacity="0.6"/>
+          <path d="M 80 170 C 100 150 120 140 130 160 C 140 180 110 200 80 170 Z" opacity="0.6"/>
+          <path d="M 40 220 Q 60 200 90 210" opacity="0.5"/>
+          <path d="M 120 150 Q 140 120 160 130" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-right reveal reveal-zoom">
+      <img src="image/bride1.png" alt="Sriji Bridal Portrait">
+    </div>
+  </section>
+
+  <!-- 2. ABOUT SRIJI -->
+  <section id="about" style="padding: 90px 8%; background: var(--bg-nude-soft); position: relative;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;" class="reveal reveal-up">
+      <span class="section-tag-caps">ABOUT SRIJI</span>
+      <h2 style="font-family: var(--font-serif-primary); font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--color-espresso); margin-bottom: 20px; line-height: 1.3;">About My Work 🤍</h2>
+      <p style="font-size: 1.08rem; color: var(--color-espresso-medium); max-width: 780px; margin: 0 auto 35px; line-height: 1.8;">
+        I create soft, elegant and long-lasting bridal looks that enhance your natural beauty.<br>
+        Every look is thoughtfully designed with attention to skin finish, details and overall elegance — keeping your personal style at the heart of it.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. PORTFOLIO -->
+  <section id="portfolio" style="padding: 90px 8%; background: var(--bg-cream);">
+    <div class="section-header reveal reveal-up">
+      <span class="section-tag-caps">PORTFOLIO</span>
+      <h2 class="section-title">Seamless Skin &nbsp;•&nbsp; <em>Defined Details</em></h2>
+    </div>
+
+    <div class="portfolio-grid-6" style="max-width: 1050px; margin: 35px auto 0;">
+      <div class="portfolio-card reveal reveal-up" data-delay="100">
+        <img src="image/bride1.png" alt="Soft Glam Look">
+        <div class="portfolio-card-info">
+          <h4>Soft Glam Look</h4>
+        </div>
+      </div>
+      <div class="portfolio-card reveal reveal-up" data-delay="200">
+        <img src="image/bride2.png" alt="Skin Finished">
+        <div class="portfolio-card-info">
+          <h4>Skin Finished</h4>
+        </div>
+      </div>
+      <div class="portfolio-card reveal reveal-up" data-delay="300">
+        <img src="image/bride3.png" alt="HD Look">
+        <div class="portfolio-card-info">
+          <h4>HD Look</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. OUR SERVICES -->
+  <section id="services" style="padding: 90px 8%; background: var(--bg-nude-soft);">
+    <div class="section-header reveal reveal-up">
+      <span class="section-tag-caps">OUR SERVICES</span>
+      <h2 class="section-title">Your Bridal <em>Experience</em></h2>
+      <p class="section-sub">From the first brush to the final touch, we take care of every detail.</p>
+    </div>
+
+    <div class="round-services-row">
+      <div class="round-service-item reveal reveal-up" data-delay="100">
+        <div class="round-icon-circle">💄</div>
+        <div class="round-service-title">Bridal Makeup</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="150">
+        <div class="round-icon-circle">💇‍♀️</div>
+        <div class="round-service-title">Hair Styling</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="200">
+        <div class="round-icon-circle">🥻</div>
+        <div class="round-service-title">Saree Draping / Pre-pleating</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="250">
+        <div class="round-icon-circle">🌿</div>
+        <div class="round-service-title">Custom Mehandhi</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="300">
+        <div class="round-icon-circle">🧵</div>
+        <div class="round-service-title">Aari & Designer Works</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="350">
+        <div class="round-icon-circle">👑</div>
+        <div class="round-service-title">Jewellery Setting</div>
+      </div>
+      <div class="round-service-item reveal reveal-up" data-delay="400">
+        <div class="round-icon-circle">🌸</div>
+        <div class="round-service-title">Flowers & Finishing Touches</div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 35px;" class="reveal reveal-up">
+      <span class="script-tagline" style="font-size: 2.2rem; color: var(--color-muted-rose);">Because you deserve nothing less</span>
+    </div>
+  </section>
+
+  <!-- 5. BRIDAL PACKAGES -->
+  <section id="packages" style="padding: 90px 8%; background: var(--bg-cream);">
+    <div class="section-header reveal reveal-up">
+      <span class="section-tag-caps">BRIDAL PACKAGES</span>
+      <h2 class="section-title">Curated for <em>Every Kind of Bride</em></h2>
+      <p class="section-sub">Choose the package that suits your dream look, or let's customise one just for you.</p>
+    </div>
+
+    <div class="packages-grid-4">
+      <!-- 1. ESSENTIAL BRIDAL LOOK -->
+      <div class="pkg-nude-card reveal reveal-up" data-delay="100">
+        <h3>ESSENTIAL BRIDAL LOOK</h3>
+        <ul>
+          <li>Bridal Makeup</li>
+          <li>Hairstyle</li>
+          <li>Saree Draping</li>
+          <li>Saree Pre-Pleating</li>
+        </ul>
+        <div class="pkg-price-tag">Starting from ₹6,000</div>
+      </div>
+
+      <!-- 2. HD LOOK -->
+      <div class="pkg-nude-card reveal reveal-up" data-delay="200">
+        <h3>HD LOOK</h3>
+        <ul>
+          <li>HD Bridal Look</li>
+          <li>Hairstyle</li>
+          <li>Saree Draping</li>
+          <li>Saree Pre-Pleating</li>
+        </ul>
+        <div class="pkg-price-tag">Starting from ₹10,000</div>
+      </div>
+
+      <!-- 3. SOFT GLAM SKIN FINISH LOOK (Most Popular) -->
+      <div class="pkg-nude-card popular reveal reveal-up" data-delay="300">
+        <div class="popular-badge">Most Popular</div>
+        <h3>SOFT GLAM SKIN FINISH LOOK</h3>
+        <ul>
+          <li>Skin Finished with Soft Glam Look</li>
+          <li>Hairstyle (Advanced)</li>
+          <li>Saree Draping</li>
+          <li>Saree Pre-Pleating</li>
+          <li>Jewellery Setting</li>
+          <li>Flowers & Accessories</li>
+        </ul>
+        <div class="pkg-price-tag">Starting from ₹15,000</div>
+      </div>
+
+      <!-- 4. BRIDESMAID PACKAGE -->
+      <div class="pkg-nude-card reveal reveal-up" data-delay="400">
+        <h3>BRIDESMAID PACKAGE</h3>
+        <ul>
+          <li>Makeup</li>
+          <li>Hairdo</li>
+          <li>Draping</li>
+        </ul>
+        <div class="pkg-price-tag">Starting from ₹3,000</div>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-size: 0.88rem; color: var(--color-espresso-medium); margin-top: 25px;" class="reveal reveal-up">Packages can be customised based on your wedding requirements.</p>
+  </section>
+
+  <!-- 6. WHY CHOOSE US -->
+  <section id="why-us" style="padding: 90px 8%; background: var(--bg-nude-soft);">
+    <div class="section-header reveal reveal-up">
+      <span class="section-tag-caps">WHY CHOOSE US</span>
+      <h2 class="section-title">More Than <em>Just Makeup</em></h2>
+    </div>
+
+    <div class="features-badge-row">
+      <div class="feature-badge-item reveal reveal-up" data-delay="100">
+        <div class="badge-circle-icon">👑</div>
+        <div class="badge-title">Experienced & Passionate</div>
+      </div>
+      <div class="feature-badge-item reveal reveal-up" data-delay="200">
+        <div class="badge-circle-icon">💎</div>
+        <div class="badge-title">High-End Products</div>
+      </div>
+      <div class="feature-badge-item reveal reveal-up" data-delay="300">
+        <div class="badge-circle-icon">🌿</div>
+        <div class="badge-title">Hygienic & Safe Practices</div>
+      </div>
+      <div class="feature-badge-item reveal reveal-up" data-delay="400">
+        <div class="badge-circle-icon">⏰</div>
+        <div class="badge-title">On-Time Execution</div>
+      </div>
+      <div class="feature-badge-item reveal reveal-up" data-delay="500">
+        <div class="badge-circle-icon">💬</div>
+        <div class="badge-title">Personalised Consultation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="footer-thankyou" id="footer">
+    <div class="monogram-seal-s" style="margin-bottom: 10px;">S</div>
+    <div class="brand-title">SRIJI MAKEUP ARTISTRY</div>
+    <div class="cursive-thank">Thank You for being here ♥</div>
+    
+    <div class="social-buttons-row" style="margin-bottom: 30px;">
+      <a href="https://www.instagram.com/sriji_makeup_artistry?igsh=MXF2bjA5aWFlZTQwaw==" target="_blank" class="social-btn-circle" title="Instagram">📷</a>
+      <a href="https://wa.me/919043568407" target="_blank" class="social-btn-circle" title="WhatsApp">💬</a>
+    </div>
+
+    <div style="font-size: 0.8rem; color: var(--color-espresso-medium);">
+      © 2023 Sriji Makeup Artistry. All rights reserved. • Karur, Tamil Nadu
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/919043568407" class="wa-float" target="_blank" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    function openMobileMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.getElementById('mobileOverlay').classList.add('open');
+      document.body.classList.add('menu-open');
+    }
+
+    function closeMobileMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('mobileOverlay').classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }
+
+    // Scroll Progress Indicator & Navbar Scrolled State
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('scrollProgressBar').style.width = scrolled + '%';
+
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Intersection Observer for Reveal Animations
+    const observerOptions = {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const delay = e.target.getAttribute('data-delay') || 0;
+          setTimeout(() => {
+            e.target.classList.add('visible');
+          }, delay);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
